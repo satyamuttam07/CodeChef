@@ -17,7 +17,7 @@ int main(){
 			s += a[i];
 		}
 		
-		cout<<"s = "<<s<<endl;
+		// cout<<"s = "<<s<<endl;
 
 		int t1=0,t2 = 0;
 		
@@ -32,9 +32,9 @@ int main(){
 		t2 = abs(s - 2*t2);
 
 
-		cout<<"t1 = "<<t1<<endl;
+		// cout<<"t1 = "<<t1<<endl;
 
-		cout<<"t2 = "<<t2<<endl;
+		// cout<<"t2 = "<<t2<<endl;
 
 		if(t1 > t2){
 			cout<<t1<<endl;
