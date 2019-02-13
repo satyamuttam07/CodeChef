@@ -11,24 +11,27 @@ int main(){
 		}
 	}
 	int k=0;
-	int ar[3000];
+	int ar[30000];
 	for(int i=2;i<N;i++){
 		if(!seive[i]){
 			ar[k++] = i;
 		}
 	}
+
 	int t;
 	cin>>t;
-	while(t--){
+	while(t > 0){
 		int x,y;
 		cin>>x>>y;
-		int s = x+y;
-		for(int i;i<k;i++){
-			if(ar[i] > s){
-				cout<<s - ar[i]<<endl;
+		int s = 0;
+		s = x + y;
+		for(int i=0;i<k;i++){
+			if(s < ar[i]){
+				cout<<ar[i] - s<<endl;
 				break;
 			}
 		}
+		t--;
 	}
 	return 0;
 }
